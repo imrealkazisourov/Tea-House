@@ -18,7 +18,8 @@
       theme: {
         extend: {
           colors: {
-            clifford: '#da373d',
+            'gradient-end': '#F00',
+            'gradient-start': '#FF8938',
           }
         }
       }
@@ -40,8 +41,8 @@
 
 <body class="font-manrope p-2">
   <header class="container mx-auto">
-    <div class="hero">
-      <div class="hero-content flex-col lg:flex-row">
+    <div class="my-20">
+      <div class="flex justify-between items-center flex-col lg:flex-row">
         <div>
           <h1 class="text-3xl md:text-5xl lg:text-7xl font-extrabold">
             It's good <br>
@@ -49,10 +50,13 @@
             Tea House
           </h1>
           <p class="py-6">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
-          <button class="btn btn-primary">Explore More</button>
+          <button class="btn bg-gradient-to-r from-gradient-start to-gradient-end text-white">
+            Explore More
+            <i class="fa-solid fa-arrow-trend-up"></i>
+          </button>
         </div>
         <div>
-          <img src="images/banner.png" class="w-full lg:max-w-sm" />
+          <img src="images/banner.png" class="" />
           <div class="-mt-20 flex items-center gap-4 drop-shadow-lg bg-white p-5 w-60 h-24 rounded-lg">
             <i class="fa-solid fa-star text-3xl text-amber-400"></i>
             <div>
@@ -220,71 +224,115 @@
         </p>
       </div>
       <!-- News Card Container  -->
-     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-       <!-- News Card 1 -->
-       <div class="mt-12 card border-2 rounded-lg border-[#D2D2D2] shadow-md">
-        <figure class="px-5 pt-5">
-          <img src="images/news-1.png" alt="tea1" class="rounded-xl" />
-        </figure>
-        <div class="card-body ">
-          <p class="font-medium text-[#777]">Feb 05, 2027</p>
-          <h2 class="card-title text-[#1C1C1C] font-extrabold">
-            Collecting 8 points for
-            <br>
-            discount
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- News Card 1 -->
+        <div class="mt-12 card border-2 rounded-lg border-[#D2D2D2] shadow-md">
+          <figure class="px-5 pt-5">
+            <img src="images/news-1.png" alt="tea1" class="rounded-xl" />
+          </figure>
+          <div class="card-body ">
+            <p class="font-medium text-[#777]">Feb 05, 2027</p>
+            <h2 class="card-title text-[#1C1C1C] font-extrabold">
+              Collecting 8 points for
+              <br>
+              discount
 
-          </h2>
-          <p class="text-[#777] font-medium">There are many variations of passages of Lorem Ipsum available.</p>
-          <div class="card-actions">
-            <button class="text-[#1C1C1C] font-bold">Learn More</button>
+            </h2>
+            <p class="text-[#777] font-medium">There are many variations of passages of Lorem Ipsum available.</p>
+            <div class="card-actions">
+              <button class="text-[#1C1C1C] font-bold">Learn More</button>
+            </div>
+          </div>
+        </div>
+        <!-- News Card 2 -->
+        <div class="mt-12 card border-2 rounded-lg border-[#D2D2D2] shadow-md">
+          <figure class="px-5 pt-5">
+            <img src="images/news-2.png" alt="tea1" class="rounded-xl" />
+          </figure>
+          <div class="card-body ">
+            <p class="font-medium text-[#777]">Feb 05, 2027</p>
+            <h2 class="card-title text-[#1C1C1C] font-extrabold">
+              Collecting 8 points for
+              <br>
+              discount
+
+            </h2>
+            <p class="text-[#777] font-medium">There are many variations of passages of Lorem Ipsum available.</p>
+            <div class="card-actions">
+              <button class="text-[#1C1C1C] font-bold">Learn More</button>
+            </div>
+          </div>
+        </div>
+        <!-- News Card 3 -->
+        <div class="mt-12 card border-2 rounded-lg border-[#D2D2D2] shadow-md">
+          <figure class="px-5 pt-5">
+            <img src="images/news-3.png" alt="tea1" class="rounded-xl" />
+          </figure>
+          <div class="card-body ">
+            <p class="font-medium text-[#777]">Feb 05, 2027</p>
+            <h2 class="card-title text-[#1C1C1C] font-extrabold">
+              Collecting 8 points for
+              <br>
+              discount
+
+            </h2>
+            <p class="text-[#777] font-medium">There are many variations of passages of Lorem Ipsum available.</p>
+            <div class="card-actions">
+              <button class="text-[#1C1C1C] font-bold">Learn More</button>
+            </div>
           </div>
         </div>
       </div>
-      <!-- News Card 2 -->
-      <div class="mt-12 card border-2 rounded-lg border-[#D2D2D2] shadow-md">
-        <figure class="px-5 pt-5">
-          <img src="images/news-2.png" alt="tea1" class="rounded-xl" />
-        </figure>
-        <div class="card-body ">
-          <p class="font-medium text-[#777]">Feb 05, 2027</p>
-          <h2 class="card-title text-[#1C1C1C] font-extrabold">
-            Collecting 8 points for
-            <br>
-            discount
-
-          </h2>
-          <p class="text-[#777] font-medium">There are many variations of passages of Lorem Ipsum available.</p>
-          <div class="card-actions">
-            <button class="text-[#1C1C1C] font-bold">Learn More</button>
-          </div>
-        </div>
-      </div>
-      <!-- News Card 3 -->
-      <div class="mt-12 card border-2 rounded-lg border-[#D2D2D2] shadow-md">
-        <figure class="px-5 pt-5">
-          <img src="images/news-3.png" alt="tea1" class="rounded-xl" />
-        </figure>
-        <div class="card-body ">
-          <p class="font-medium text-[#777]">Feb 05, 2027</p>
-          <h2 class="card-title text-[#1C1C1C] font-extrabold">
-            Collecting 8 points for
-            <br>
-            discount
-
-          </h2>
-          <p class="text-[#777] font-medium">There are many variations of passages of Lorem Ipsum available.</p>
-          <div class="card-actions">
-            <button class="text-[#1C1C1C] font-bold">Learn More</button>
-          </div>
-        </div>
-      </div>
-     </div>
 
     </section>
 
-  </main>
-  <footer>
 
+  </main>
+  <footer class="px-4 lg:px-48 py-10 bg-base-200 text-base-content">
+    <div class="flex justify-between my24 ">
+      <img src="images/cup.png" alt="">
+      <p>
+        <span class="font-medium text-[#494949]">Ready to get started?</span>
+        <button class="btn bg-gradient-to-r from-gradient-start to-gradient-end text-white font-bold">Get Started</button>
+      </p>
+    </div>
+    <div class="footer mt-10">
+      <nav>
+        <h6 class="footer-title">Services</h6>
+        <a class="link link-hover">Branding</a>
+        <a class="link link-hover">Design</a>
+        <a class="link link-hover">Marketing</a>
+        <a class="link link-hover">Advertisement</a>
+      </nav>
+      <nav>
+        <h6 class="footer-title">Company</h6>
+        <a class="link link-hover">About us</a>
+        <a class="link link-hover">Contact</a>
+        <a class="link link-hover">Jobs</a>
+        <a class="link link-hover">Press kit</a>
+      </nav>
+      <nav>
+        <h6 class="footer-title">Legal</h6>
+        <a class="link link-hover">Terms of use</a>
+        <a class="link link-hover">Privacy policy</a>
+        <a class="link link-hover">Cookie policy</a>
+      </nav>
+      <form>
+        <h6 class="footer-title">Newsletter</h6>
+        <fieldset class="form-control w-80">
+          <label class="label">
+            <span class="label-text">Enter your email address</span>
+          </label>
+          <div class="">
+            <input type="text" placeholder="Email address" class="bg-transparent border-b-2 border-[#494949] outline-none py-4" />
+            <button class="btn bg-gradient-to-r from-gradient-start to-gradient-end rounded-full text-white top-0 right-0"><i class="fa-solid fa-chevron-right"></i></button>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+    <aside class="mt-10 text-center">
+      <p>Copyright © 2024 - All right reserved by Quazi</p>
+    </aside>
   </footer>
 
 </body>
